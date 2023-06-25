@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react"; */
 import "./Cards.css";
 import Container from "../Container/Container";
 import Card from "../Card/Card";
@@ -17,121 +17,69 @@ import Ponyta from "../../images/Ponyta.png";
 import Vaporeon from "../../images/Vaporeon.png";
 import Weedle from "../../images/Weedle.png";
 
-const Cards = (props) => {
-	const [showAbilities, setShowAbilities] = useState(false);
-
-	const onMouseEnter = () => {
-		setShowAbilities(true);
-	};
-
-	const onMouseLeave = () => {
-		setShowAbilities(false);
-	};
-
-	const cardState = showAbilities ? "hovered" : "";
+const Cards = () => {
 
 	return (
 		<Container flex>
-			<Card
-				className={cardState}
-				onMouseEnter={onMouseEnter}
-				onMouseLeave={onMouseLeave}
-			>
+			<Card>
 				<Image src={Arcanine} alt="Arcanine" />
 				<Title as="h2">Arcanine</Title>
 				<Abilities>Intimidate, Flashfire</Abilities>
-            </Card>
-            
-            <Card
-				className={cardState}
-				onMouseEnter={onMouseEnter}
-				onMouseLeave={onMouseLeave}
-			>
+			</Card>
+
+			<Card>
 				<Image src={Chansey} alt="Chansey" />
 				<Title as="h2">Chansey</Title>
 				<Abilities>Natural Cure, Serene Grace, Healer</Abilities>
-            </Card>
-            
-            <Card
-				className={cardState}
-				onMouseEnter={onMouseEnter}
-				onMouseLeave={onMouseLeave}
-			>
+			</Card>
+
+			<Card>
 				<Image src={Clefairy} alt="Clefairy" />
 				<Title as="h2">Clefairy</Title>
 				<Abilities>Cute Charm, Magic Guard, Friend Guard</Abilities>
-            </Card>
-            
-            <Card
-				className={cardState}
-				onMouseEnter={onMouseEnter}
-				onMouseLeave={onMouseLeave}
-			>
+			</Card>
+
+			<Card>
 				<Image src={Dewgong} alt="Dewgong" />
 				<Title as="h2">Dewgong</Title>
 				<Abilities>Thick Fat, Hydration, Ice Body</Abilities>
-            </Card>
-            
-            <Card
-				className={cardState}
-				onMouseEnter={onMouseEnter}
-				onMouseLeave={onMouseLeave}
-			>
+			</Card>
+
+			<Card>
 				<Image src={Eevee} alt="Eevee" />
 				<Title as="h2">Eevee</Title>
 				<Abilities>Run Away, Adaptability, Anticipation</Abilities>
-            </Card>
-            
-            <Card
-				className={cardState}
-				onMouseEnter={onMouseEnter}
-				onMouseLeave={onMouseLeave}
-			>
+			</Card>
+
+			<Card>
 				<Image src={Jigglypuff} alt="Jigglypuff" />
 				<Title as="h2">Jigglypuff</Title>
 				<Abilities>Cute Charm, Competitive, Friend Guard</Abilities>
-            </Card>
-            
-            <Card
-				className={cardState}
-				onMouseEnter={onMouseEnter}
-				onMouseLeave={onMouseLeave}
-			>
+			</Card>
+
+			<Card>
 				<Image src={Pikachu} alt="Pikachu" />
 				<Title as="h2">Pikachu</Title>
 				<Abilities>Static, Lightning Rod</Abilities>
-            </Card>
-            
-            <Card
-				className={cardState}
-				onMouseEnter={onMouseEnter}
-				onMouseLeave={onMouseLeave}
-			>
+			</Card>
+
+			<Card>
 				<Image src={Ponyta} alt="Ponyta" />
 				<Title as="h2">Ponyta</Title>
 				<Abilities>Run Away, Flash Fire, Flame Body</Abilities>
-            </Card>
-            
-            <Card
-				className={cardState}
-				onMouseEnter={onMouseEnter}
-				onMouseLeave={onMouseLeave}
-			>
+			</Card>
+
+			<Card>
 				<Image src={Vaporeon} alt="Vaporeon" />
 				<Title as="h2">Vaporeon</Title>
 				<Abilities>Water Absorb, Hydration</Abilities>
-            </Card>
-            
-            <Card
-				className={cardState}
-				onMouseEnter={onMouseEnter}
-				onMouseLeave={onMouseLeave}
-			>
+			</Card>
+
+			<Card>
 				<Image src={Weedle} alt="Weedle" />
 				<Title as="h2">Weedle</Title>
 				<Abilities>Shield Dust, Run Away</Abilities>
-            </Card>
-        
+			</Card>
 		</Container>
 	);
 };
