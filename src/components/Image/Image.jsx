@@ -15,8 +15,6 @@ const Image = (props) => {
 			src={props.src}
 			alt={props.alt}
 			loading={loading}
-			width={props.width}
-			height={props.height}
 		/>
 	);
 };
