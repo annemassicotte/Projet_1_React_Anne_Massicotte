@@ -1,0 +1,21 @@
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 6rem 3rem;
+	width: 100%;
+}
+
+.container.fluid {
+	max-width: 100%;
+}
+
+.container.no-gutters {
+	padding: 0;
+}
+
+.container.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	gap:2rem;
+}
