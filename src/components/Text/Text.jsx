@@ -15,8 +15,10 @@ const Text = (props) => {
 			);
 		case "blockquote":
 			return (
-				<blockquote className={classnames.join(" ")}>{props.children}</blockquote>
-            );
+				<blockquote className={classnames.join(" ")}>
+					{props.children}
+				</blockquote>
+			);
 		default:
 			return <p className={classnames.join(" ")}>{props.children}</p>;
 	}

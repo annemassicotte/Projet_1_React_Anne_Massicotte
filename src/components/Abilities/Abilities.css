@@ -1,0 +1,7 @@
+.abilities{
+    display:none;
+}
+
+.hovered .abilities{
+    display:block;
+}

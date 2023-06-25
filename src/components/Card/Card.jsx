@@ -15,11 +15,11 @@ const Card = (props) => {
 		setShowAbilities(false);
 	};
 
-	const cardState = showAbilities ? "hovered" : "";
+	const cardHoverState = showAbilities ? "hovered" : "";
 
 	return (
 		<Container
-			className={`card ${cardState}`}
+			className={`card ${cardHoverState}`}
 			onMouseEnter={onMouseEnter}
 			onMouseLeave={onMouseLeave}
 		>
