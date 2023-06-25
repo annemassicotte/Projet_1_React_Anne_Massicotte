@@ -12,3 +12,10 @@
 .container.no-gutters {
 	padding: 0;
 }
+
+.container.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	gap:1rem;
+}

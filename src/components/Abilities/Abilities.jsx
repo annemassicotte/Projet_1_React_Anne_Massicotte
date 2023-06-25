@@ -6,8 +6,8 @@ import Text from "../Text/Text";
 const Abilities = (props) => {
 	return (
 		<div>
-            <Title as="h3" className="abilities">Abilities</Title>
-            <Text className="abilities">{props.children}</Text>
+            <Title as="h3" className="abilities centered">Abilities</Title>
+            <Text className="abilities centered">{props.children}</Text>
 		</div>
 	);
 };
